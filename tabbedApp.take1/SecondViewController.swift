@@ -14,6 +14,7 @@ class SecondViewController: UIViewController {
     
     var originalDataSource: [String] = []
     var currentDataSource: [String] = []
+    var organizationInfo: [String] = []
     
     @IBOutlet weak var searchContainerView: UIView!
     
@@ -30,9 +31,9 @@ class SecondViewController: UIViewController {
         
         //Test Array Items
         
-        addProductToDataSource(productCount: 25, product: "Macbook Pro 15")
-        addProductToDataSource(productCount: 20, product: "Macbook Air")
-        addProductToDataSource(productCount: 30, product: "Macbook")
+        addProductToDataSource(productCount: 25, product: "Macbook Pro 15", blurb: "testing blurb")
+        addProductToDataSource(productCount: 20, product: "Macbook Air", blurb: "testing blurb")
+        addProductToDataSource(productCount: 30, product: "Macbook", blurb: "testing blurb")
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -42,10 +43,11 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func addProductToDataSource(productCount: Int, product: String)
+    func addProductToDataSource(productCount: Int, product: String, blurb: String)
     {
         for index in 1...productCount{
-            originalDataSource.append("\(product)# \(index)")
+            originalDataSource.append("\(product)")
+            organizationInfo.append("\(blurb)")
         }
     }
     func filterCurrentDataSource(searchTerm: String){
@@ -103,7 +105,7 @@ extension SecondViewController: UITableViewDataSource, UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
-        let alertController = UIAlertController(title: "Selection", message: "Selected: \(currentDataSource[indexPath.row])", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "\(currentDataSource[indexPath.row])", message:  "\(organizationInfo[indexPath.row])", preferredStyle: .alert)
         
         searchController.isActive = false
         
