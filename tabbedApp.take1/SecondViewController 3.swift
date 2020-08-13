@@ -18,14 +18,14 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var searchContainerView: UIView!
     
     @IBOutlet weak var tableView: UITableView!
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
+        //searchContainerView.addSubView(view:Sub)
         searchController.obscuresBackgroundDuringPresentation = false
-        searchContainerView.addSubview(searchController.searchBar)
         searchController.searchBar.delegate = self
         
         //Test Array Items
@@ -66,7 +66,6 @@ class SecondViewController: UIViewController {
         tableView.reloadData()
     }
 
-    
     @IBAction func restoreData(_ sender: Any) {
         restoreCurrentDataSource()
     }
@@ -108,6 +107,7 @@ extension SecondViewController: UITableViewDataSource, UITableViewDelegate
         searchController.isActive = false
         
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
     }
