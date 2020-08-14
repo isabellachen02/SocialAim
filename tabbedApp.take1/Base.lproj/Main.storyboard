@@ -72,7 +72,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="wVD-Up-fm3" kind="modal" id="obE-ba-ozd"/>
+                                                    <segue destination="HsZ-OU-jT4" kind="modal" id="obE-ba-ozd"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -130,7 +130,7 @@
             </objects>
             <point key="canvasLocation" x="-1175.3623188405797" y="200.89285714285714"/>
         </scene>
-        <!--SocialAim-->
+        <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="tabbedApp_take1" customModuleProvider="target" sceneMemberID="viewController">
@@ -139,20 +139,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tIB-Gm-JgG">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="720"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="tIB-Gm-JgG" secondAttribute="trailing" id="7Nz-J8-4N3"/>
-                            <constraint firstItem="tIB-Gm-JgG" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="eQa-XO-NbW"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="tIB-Gm-JgG" secondAttribute="bottom" id="sQu-XY-1Dw"/>
-                            <constraint firstItem="tIB-Gm-JgG" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="tP4-jL-wcd"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="tIB-Gm-JgG" secondAttribute="bottom" id="74h-Vv-7ih"/>
+                            <constraint firstItem="tIB-Gm-JgG" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="IJL-Qd-xCw"/>
+                            <constraint firstItem="tIB-Gm-JgG" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="qmp-4E-rZ0"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="tIB-Gm-JgG" secondAttribute="trailing" id="w1x-lC-qhj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SocialAim" id="T7K-8B-JYT"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="T7K-8B-JYT"/>
                     <value key="contentSizeForViewInPopover" type="size" width="414" height="896"/>
                     <connections>
                         <outlet property="table" destination="tIB-Gm-JgG" id="NpD-wt-SzC"/>
@@ -280,7 +281,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wVD-Up-fm3" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="HsZ-OU-jT4" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="mH6-Rv-Jgb" kind="relationship" relationship="viewControllers" id="XUK-qM-bdN"/>
                     </connections>
@@ -370,21 +371,20 @@
             <point key="canvasLocation" x="4144.927536231884" y="838.39285714285711"/>
         </scene>
         <!--Home-->
-        <scene sceneID="YnM-Uu-gO9">
+        <scene sceneID="xLk-NE-8cm">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wVD-Up-fm3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="acW-dT-cKf"/>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="HsZ-OU-jT4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="Acb-Gu-7kH"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gWo-vK-6wR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mGs-Ju-pxV">
                         <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="Av0-sw-Awn"/>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="oyz-16-d4W"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MmA-c5-QRC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNp-De-8Cp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-394.20289855072468" y="353.57142857142856"/>
         </scene>
