@@ -52,17 +52,17 @@
                                                             <constraint firstAttribute="height" constant="50" id="ErU-Sc-4pR"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-Mq-5gg">
                                                 <rect key="frame" x="16" y="288" width="382" height="50"/>
-                                                <color key="backgroundColor" red="1" green="0.76013287370000004" blue="0.23003887109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.93755739930000004" green="0.78957164290000004" blue="0.18272033330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ahp-sr-lQG"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
                                                 <state key="normal" title="Create Account">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -79,26 +79,32 @@
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="kls-5i-UHR">
-                                        <rect key="frame" x="0.0" y="490" width="414" height="285"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <rect key="frame" x="0.0" y="490" width="414" height="291"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_0410 2" translatesAutoresizingMaskIntoConstraints="NO" id="aRr-wO-v9v">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="291"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.94969695809999999" green="0.78152233360000001" blue="0.19465366009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GGG-ks-3h8">
-                                        <rect key="frame" x="0.0" y="783" width="414" height="35"/>
+                                        <rect key="frame" x="0.0" y="789" width="414" height="29"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8zQ-bS-TEd">
-                                                <rect key="frame" x="108.5" y="0.0" width="197" height="35"/>
+                                                <rect key="frame" x="86.5" y="0.0" width="241" height="29"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grL-qh-HIL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
-                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
-                                                        <color key="textColor" red="0.51054888229999995" green="0.87611929669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have an account: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grL-qh-HIL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="29"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                        <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdA-lx-jdA">
-                                                        <rect key="frame" x="144" y="0.0" width="53" height="35"/>
-                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                                        <rect key="frame" x="174" y="0.0" width="67" height="29"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="Sign in">
-                                                            <color key="titleColor" red="0.15210463017562817" green="0.69147822790089974" blue="0.88681994818652854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
                                                     </button>
                                                 </subviews>
@@ -106,9 +112,10 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.94969695809999999" green="0.78152233360000001" blue="0.19465366009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.93755739930000004" green="0.78957164290000004" blue="0.18272033330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TCD-gU-hBZ" firstAttribute="leading" secondItem="1eB-6Q-oxY" secondAttribute="leading" id="XXr-aY-dWq"/>
                             <constraint firstItem="TCD-gU-hBZ" firstAttribute="top" secondItem="1eB-6Q-oxY" secondAttribute="top" id="ez9-y9-HtY"/>
@@ -121,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0RD-qf-SVS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1174" y="201"/>
+            <point key="canvasLocation" x="-1175.3623188405797" y="200.89285714285714"/>
         </scene>
         <!--Home-->
         <scene sceneID="hNz-n2-bh7">
@@ -192,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517" y="-478.00000000000006"/>
+            <point key="canvasLocation" x="-393" y="354"/>
         </scene>
         <!--Search-->
         <scene sceneID="wg7-f3-ORb">
@@ -242,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="517" y="201"/>
+            <point key="canvasLocation" x="425" y="319"/>
         </scene>
         <!--Profile-->
         <scene sceneID="U2a-86-hw0">
@@ -258,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="siL-x8-FTU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="514" y="855"/>
+            <point key="canvasLocation" x="1177" y="319"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -278,7 +285,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-310" y="201"/>
+            <point key="canvasLocation" x="-391" y="-432"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -286,6 +293,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_0406 2" width="1296" height="473"/>
+        <image name="IMG_0410 2" width="919" height="616"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
