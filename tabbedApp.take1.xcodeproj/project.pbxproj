@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		237E590624E6618600C6991B /* profilepic.png in Resources */ = {isa = PBXBuildFile; fileRef = 237E590524E6618600C6991B /* profilepic.png */; };
+		237E590824E70EF600C6991B /* Neon Green and Purple Bright and Bold Quotes Social Media Post.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 237E590724E70EF600C6991B /* Neon Green and Purple Bright and Bold Quotes Social Media Post.jpg */; };
+		237E590B24E7119800C6991B /* Screen Shot 2020-08-14 at 11.38.10 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 237E590A24E7119700C6991B /* Screen Shot 2020-08-14 at 11.38.10 AM.png */; };
+		237E590D24E711C600C6991B /* IMG_0592.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 237E590C24E711C600C6991B /* IMG_0592.jpeg */; };
+		237E590F24E7160C00C6991B /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 237E590E24E7160C00C6991B /* giphy.gif */; };
 		2830D96F24E485570028F59B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830D96E24E485570028F59B /* AppDelegate.swift */; };
 		2830D97124E485570028F59B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830D97024E485570028F59B /* SceneDelegate.swift */; };
 		2830D97324E485570028F59B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830D97224E485570028F59B /* FirstViewController.swift */; };
@@ -39,6 +43,11 @@
 
 /* Begin PBXFileReference section */
 		237E590524E6618600C6991B /* profilepic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profilepic.png; path = ../../Downloads/profilepic.png; sourceTree = "<group>"; };
+		237E590724E70EF600C6991B /* Neon Green and Purple Bright and Bold Quotes Social Media Post.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Neon Green and Purple Bright and Bold Quotes Social Media Post.jpg"; path = "../../Downloads/Neon Green and Purple Bright and Bold Quotes Social Media Post.jpg"; sourceTree = "<group>"; };
+		237E590924E7100800C6991B /* profilepic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profilepic.png; sourceTree = "<group>"; };
+		237E590A24E7119700C6991B /* Screen Shot 2020-08-14 at 11.38.10 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2020-08-14 at 11.38.10 AM.png"; path = "../../../../var/folders/8s/srbsk6_s0sn3sftg3n9rfkhr0000gn/T/TemporaryItems/(A Document Being Saved By screencaptureui 11)/Screen Shot 2020-08-14 at 11.38.10 AM.png"; sourceTree = "<group>"; };
+		237E590C24E711C600C6991B /* IMG_0592.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0592.jpeg; path = ../../../../var/folders/8s/srbsk6_s0sn3sftg3n9rfkhr0000gn/T/com.apple.iChat/Messages/Transfers/IMG_0592.jpeg; sourceTree = "<group>"; };
+		237E590E24E7160C00C6991B /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = giphy.gif; path = ../../Desktop/giphy.gif; sourceTree = "<group>"; };
 		2830D96B24E485570028F59B /* tabbedApp.take1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabbedApp.take1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2830D96E24E485570028F59B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2830D97024E485570028F59B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +98,12 @@
 				2830D98924E4855D0028F59B /* tabbedApp.take1Tests */,
 				2830D99424E4855D0028F59B /* tabbedApp.take1UITests */,
 				2830D96C24E485570028F59B /* Products */,
+				237E590924E7100800C6991B /* profilepic.png */,
 				237E590524E6618600C6991B /* profilepic.png */,
+				237E590724E70EF600C6991B /* Neon Green and Purple Bright and Bold Quotes Social Media Post.jpg */,
+				237E590A24E7119700C6991B /* Screen Shot 2020-08-14 at 11.38.10 AM.png */,
+				237E590C24E711C600C6991B /* IMG_0592.jpeg */,
+				237E590E24E7160C00C6991B /* giphy.gif */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,9 +255,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237E590824E70EF600C6991B /* Neon Green and Purple Bright and Bold Quotes Social Media Post.jpg in Resources */,
 				237E590624E6618600C6991B /* profilepic.png in Resources */,
 				2830D98024E4855D0028F59B /* LaunchScreen.storyboard in Resources */,
 				2830D97D24E4855D0028F59B /* Assets.xcassets in Resources */,
+				237E590D24E711C600C6991B /* IMG_0592.jpeg in Resources */,
+				237E590B24E7119800C6991B /* Screen Shot 2020-08-14 at 11.38.10 AM.png in Resources */,
+				237E590F24E7160C00C6991B /* giphy.gif in Resources */,
 				2830D97824E485570028F59B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
